@@ -429,6 +429,12 @@ section{
     margin-bottom:58px;
 }
 
+//Styles for CONTACTS section
+.contacts-section{
+    display: flex;
+    flex-direction: column;
+}
+
 //Styles for VISIT section
 .visit-section{
     display: flex;
@@ -823,5 +829,78 @@ section{
         margin-bottom: 0px;
     }
 
+    //Styles for the CONTACTS section
+    .contacts-section{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+
+    //Styles for VISIT section
+    .visit-section{
+        width:35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .column-heading-text{
+            font-size:72px;
+        }
+    }
+
+    .visit-address{
+        margin-top:70px;
+        font-size:20px;
+    }
+
+    .visit-address-bottom{
+        margin-top: 0px;
+    }
+
+    .visit-mailing{
+        margin-bottom: 20px;
+    }
+
+    .description-btn{
+        margin-top:60px;
+    }
+
+    //Styles for CONNECT section
+    .connect-section{
+        width:65%;
+    }
+
+    .ribbon-connect{
+        width:440px;
+        height:110px;
+        background: url(../images/ribbon_tablet_5.png);
+        background-repeat: no-repeat;
+        background-size: center center;
+        margin-top:60px;
+        margin-bottom: 60px;
+    }
+
+    .connect-form-input{
+        margin-bottom:30px;
+    }
+
+    .connect-form-btn{
+        margin-bottom: 50px;
+    }
+
+    .thankyou-text{
+        font-size:42px;
+    }
+
+    .full-line{
+        background-color:#c7c3b7;
+        margin-top:10px;
+        margin-bottom: 0px;
+    }
+
+    .social-icons{
+        margin-top:10px;
+        margin-bottom: 5px;
+    }
 
 }
