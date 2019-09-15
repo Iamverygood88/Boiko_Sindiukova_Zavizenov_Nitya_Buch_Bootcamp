@@ -57,6 +57,10 @@ section{
     width:225px;
 }
 
+.first-nav-line, .second-nav-line, .nav-links{
+    display: none;
+}
+
 .left-btn{
     width:130px;
     height:50px;
@@ -533,4 +537,141 @@ section{
 
 .social-icon{
     width:40px;
+}
+
+//
+// Styles for tablet version
+//
+@media screen and (min-width:700px){
+    .mobile-nav{
+        display: none;
+    }
+
+    section{
+        width:100%;
+        height:100vh;
+    }
+
+    //Styles for HERO section
+    .hero-section{
+        flex-direction: row;
+    }
+
+    .hero-left{
+        width:35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-burger{
+        display: none;
+    }
+
+    .left-logo{
+        width:80%;
+    }
+
+    .first-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 80px;
+        margin-bottom: 35px;
+    }
+    
+    .second-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 35px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-link{
+        font-size: 24px;
+        font-family: "Oswald";
+        color: rgb(68, 65, 64);
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: center;       
+    }
+    
+    .nav-link:last-child{
+        margin-bottom: 0px;
+    }
+
+    .left-btn{
+        margin-top:90px;
+    }
+
+    .hero-right{
+        width:65%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .since-date{
+        padding-top: 0px;
+    }
+
+    .right-ribbon{
+        width:90%;
+        background: url(../images/ribbon_tablet_4.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 60px;
+    }
+
+    .ribbon-text{
+        font-size: 30px;
+        font-family: "Oswald";
+        color: rgb(242, 240, 233);
+        text-transform: uppercase;
+        line-height: 40px;
+        text-align: center;      
+    }
+
+    .hi-block{
+        margin-bottom: 60px;
+    }
+
+    .hi-line{
+        width:100px;
+    }
+
+    .hi-text{
+        margin-left:10px;
+        margin-right:10px;
+        font-size:48px;
+    }
+
+    .description-heading{
+        font-size:36px;
+    }
+
+    .description-text{
+        width:460px;
+        font-size:18px;
+    }
+
+    .description-btn{
+        width:218px;
+        height:50px;
+        background:url(../images/button_wide.png);
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+    }
+
+    //Styles for FEATURES section
+    
 }
