@@ -120,10 +120,10 @@ section{
 .ribbon-text{
     text-transform: uppercase;
     text-align:center;
-    font-size: 18.692px;
+    font-size: 26px;
     font-family: "Oswald";
     color: rgb(242, 240, 233);
-    line-height: 30px;
+    line-height: 36px;
 }
 
 .hi-block{
@@ -193,7 +193,7 @@ section{
 }
 
 .description-btn-text{
-    font-size: 18px;
+    font-size: 25px;
     font-family: "Oswald";
     color: rgb(249, 248, 244);
     text-transform: uppercase;
@@ -409,9 +409,28 @@ section{
 }
 
 //Styles for VISIT section
-.portfolio-section{
+.visit-section{
     display: flex;
     flex-direction: column;
-    background-color:#f2f0e9;
+    background-color:#f9f8f4;
     align-items: center;
+}
+
+.visit-address{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(97, 96, 98);
+    line-height: 1.35;
+    text-align: center;     
+}
+
+.visit-mailing{
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: rgb(68, 65, 64);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;   
+    margin-top:65px;
+    margin-bottom: 30px;
 }
