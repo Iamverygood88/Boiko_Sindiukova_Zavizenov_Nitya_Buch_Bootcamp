@@ -785,4 +785,43 @@ section{
     .contact-text{
         display: none;
     }
+
+    //Styles for PORTFOLIO section
+    .portfolio-section{
+        .column-heading{
+            margin-top:50px;
+            margin-bottom: 50px;
+            height:220px;
+        }
+
+        .member-name{
+            margin-top:20px;
+        }
+
+        .member-btn{
+            margin-top:25px;
+        }
+    }
+
+    .projects-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:570px;
+    }
+
+    .projects-item{
+        width:50%;
+        margin-bottom: 50px;
+    }
+
+    .projects-item:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .projects-item:nth-child(4){
+        margin-bottom: 0px;
+    }
+
+
 }
