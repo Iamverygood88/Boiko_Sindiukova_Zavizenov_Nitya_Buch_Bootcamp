@@ -299,8 +299,8 @@ section{
 }
 
 .member-subcircle{
-    width:182px;
-    height:182px;
+    width:180px;
+    height:180px;
     border-radius: 50%;
     border: 1px solid #444140;
     overflow: hidden;
@@ -357,4 +357,61 @@ section{
 
 .contact-text{
     margin-bottom: 68px;
+}
+
+//Styles for PORTFOLIO section
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    background-color:#f2f0e9;
+    align-items: center;
+
+    .column-heading-line{
+        width:245px;
+    }
+}
+
+.column-heading-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-heading-middle-first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .column-heading-text{
+        margin-left:19px;
+        margin-right:19px;
+    }
+}
+
+.column-heading-middle-round{
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+    background-color: $main-orange;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:58px;
+}
+
+//Styles for VISIT section
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    background-color:#f2f0e9;
+    align-items: center;
 }
