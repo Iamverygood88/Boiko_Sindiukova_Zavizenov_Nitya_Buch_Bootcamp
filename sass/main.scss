@@ -561,6 +561,58 @@ section{
     width:40px;
 }
 
+.pop-up {
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 0;
+  background-color: #f2f0e9;
+	// background-color: rgb(74, 180, 188);
+	height: 50%;
+
+}
+
+.pop-up-on {
+  display: block;
+}
+
+video {
+	width: 100%;
+	margin-top: 35%;
+  // position: absolute;
+
+}
+
+.close-btn {
+  width:40px;
+  height:40px;
+	position: absolute;
+	color: rgb(74, 180, 188);
+	font-size: 2rem;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+  font-family: "Oswald";
+  // font-family: "Montserrat";
+}
+
+
+.controls {
+  min-width: 100%;
+  height: 50px;
+  // background-color: rgb(74, 180, 188);
+}
+
+.pause-btn {
+  text-align: left;
+}
+
+.time-style {
+  display: flex;
+  flex-direction: row;
+}
+
 
 //
 // Styles for tablet version
@@ -602,7 +654,7 @@ section{
         margin-top: 80px;
         margin-bottom: 35px;
     }
-    
+
     .second-nav-line{
         display: block;
         width:160px;
@@ -616,16 +668,16 @@ section{
         flex-direction: column;
         align-items: center;
     }
-    
+
     .nav-link{
         font-size: 24px;
         font-family: "Oswald";
         color: rgb(68, 65, 64);
         text-transform: uppercase;
         line-height: 2;
-        text-align: center;       
+        text-align: center;
     }
-    
+
     .nav-link:last-child{
         margin-bottom: 0px;
     }
@@ -661,7 +713,7 @@ section{
         color: rgb(242, 240, 233);
         text-transform: uppercase;
         line-height: 40px;
-        text-align: center;      
+        text-align: center;
     }
 
     .hi-block{
@@ -727,8 +779,8 @@ section{
         font-family: "Montserrat";
         color: rgb(68, 65, 64);
         line-height: 1.333;
-        text-align: center;  
-        margin-top:20px;  
+        text-align: center;
+        margin-top:20px;
     }
 
     //Styles for TEAM section
@@ -760,7 +812,7 @@ section{
         font-family: "Montserrat";
         color: rgb(68, 65, 64);
         line-height: 1.333;
-        text-align: center;         
+        text-align: center;
     }
 
     .left-team-text{
@@ -905,4 +957,3 @@ section{
     }
 
 }
-
