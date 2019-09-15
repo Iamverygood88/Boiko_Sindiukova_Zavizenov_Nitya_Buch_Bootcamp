@@ -57,6 +57,10 @@ section{
     width:225px;
 }
 
+.first-nav-line, .second-nav-line, .nav-links{
+    display: none;
+}
+
 .left-btn{
     width:130px;
     height:50px;
@@ -212,6 +216,10 @@ section{
 
 .ribbon-features{
     margin-top:70px;
+
+    .ribbon-text{
+        width:200px;
+    }
 }
 
 .features-list{
@@ -241,6 +249,10 @@ section{
     line-height: 1.364;
     text-align: center; 
     margin-top:48px;
+}
+
+.features-desc{
+    display: none;
 }
 
 //Styles for TEAM section
@@ -274,6 +286,14 @@ section{
     line-height: 1.167;
     text-transform: uppercase;
     text-align: center;    
+}
+
+.dynamic-desc{
+    display: none;
+}
+
+.left-team-text{
+    display: none;
 }
 
 .team-members{
@@ -409,6 +429,12 @@ section{
     margin-bottom:58px;
 }
 
+//Styles for CONTACTS section
+.contacts-section{
+    display: flex;
+    flex-direction: column;
+}
+
 //Styles for VISIT section
 .visit-section{
     display: flex;
@@ -533,4 +559,348 @@ section{
 
 .social-icon{
     width:40px;
+}
+
+//
+// Styles for tablet version
+//
+@media screen and (min-width:700px){
+    .mobile-nav{
+        display: none;
+    }
+
+    section{
+        width:100%;
+        height:100vh;
+    }
+
+    //Styles for HERO section
+    .hero-section{
+        flex-direction: row;
+    }
+
+    .hero-left{
+        width:35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-burger{
+        display: none;
+    }
+
+    .left-logo{
+        width:80%;
+    }
+
+    .first-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 80px;
+        margin-bottom: 35px;
+    }
+    
+    .second-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 35px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-link{
+        font-size: 24px;
+        font-family: "Oswald";
+        color: rgb(68, 65, 64);
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: center;       
+    }
+    
+    .nav-link:last-child{
+        margin-bottom: 0px;
+    }
+
+    .left-btn{
+        margin-top:90px;
+    }
+
+    .hero-right{
+        width:65%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .since-date{
+        padding-top: 0px;
+    }
+
+    .right-ribbon{
+        width:90%;
+        background: url(../images/ribbon_tablet_4.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 60px;
+    }
+
+    .ribbon-text{
+        font-size: 30px;
+        font-family: "Oswald";
+        color: rgb(242, 240, 233);
+        text-transform: uppercase;
+        line-height: 40px;
+        text-align: center;      
+    }
+
+    .hi-block{
+        margin-bottom: 60px;
+    }
+
+    .hi-line{
+        width:100px;
+    }
+
+    .hi-text{
+        margin-left:10px;
+        margin-right:10px;
+        font-size:48px;
+    }
+
+    .description-heading{
+        font-size:36px;
+    }
+
+    .description-text{
+        width:460px;
+        font-size:18px;
+    }
+
+    .description-btn{
+        width:218px;
+        height:50px;
+        background:url(../images/button_wide.png);
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+    }
+
+    //Styles for FEATURES section
+    .ribbon-features{
+        width:666px;
+        height:135px;
+        background: url(../images/ribbon_tablet_2.png);
+        background-repeat: no-repeat;
+
+        .ribbon-text{
+            width:320px;
+        }
+    }
+
+    .features-list{
+        margin-top:50px;
+        width:90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .features-item{
+        width:33%;
+        margin-bottom: 50px;
+    }
+
+    .features-desc{
+        display: none;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(68, 65, 64);
+        line-height: 1.333;
+        text-align: center;  
+        margin-top:20px;  
+    }
+
+    //Styles for TEAM section
+    .team-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .left-team{
+        height:92%;
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .column-heading{
+        width:100%;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+
+    .dynamic-desc{
+        display:block;
+        width:80%;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(68, 65, 64);
+        line-height: 1.333;
+        text-align: center;         
+    }
+
+    .left-team-text{
+        display: block;
+        width:60%;
+        text-align: center;
+        font-size:19px;
+        line-height: 35px;
+    }
+
+    .team-members{
+        width:70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .team-member{
+        width:50%;
+    }
+
+    .team-member:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .team-member:nth-child(4){
+        margin-bottom: 0px;
+    }
+
+    .contact-text{
+        display: none;
+    }
+
+    //Styles for PORTFOLIO section
+    .portfolio-section{
+        .column-heading{
+            margin-top:50px;
+            margin-bottom: 50px;
+            height:220px;
+        }
+
+        .member-name{
+            margin-top:20px;
+        }
+
+        .member-btn{
+            margin-top:25px;
+        }
+    }
+
+    .projects-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:570px;
+    }
+
+    .projects-item{
+        width:50%;
+        margin-bottom: 50px;
+    }
+
+    .projects-item:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .projects-item:nth-child(4){
+        margin-bottom: 0px;
+    }
+
+    //Styles for the CONTACTS section
+    .contacts-section{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+
+    //Styles for VISIT section
+    .visit-section{
+        width:35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .column-heading-text{
+            font-size:72px;
+        }
+    }
+
+    .visit-address{
+        margin-top:70px;
+        font-size:20px;
+    }
+
+    .visit-address-bottom{
+        margin-top: 0px;
+    }
+
+    .visit-mailing{
+        margin-bottom: 20px;
+    }
+
+    .description-btn{
+        margin-top:60px;
+    }
+
+    //Styles for CONNECT section
+    .connect-section{
+        width:65%;
+    }
+
+    .ribbon-connect{
+        width:440px;
+        height:110px;
+        background: url(../images/ribbon_tablet_5.png);
+        background-repeat: no-repeat;
+        background-size: center center;
+        margin-top:60px;
+        margin-bottom: 60px;
+    }
+
+    .connect-form-input{
+        margin-bottom:30px;
+    }
+
+    .connect-form-btn{
+        margin-bottom: 50px;
+    }
+
+    .thankyou-text{
+        font-size:42px;
+    }
+
+    .full-line{
+        background-color:#c7c3b7;
+        margin-top:10px;
+        margin-bottom: 0px;
+    }
+
+    .social-icons{
+        margin-top:10px;
+        margin-bottom: 5px;
+    }
+
 }
