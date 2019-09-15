@@ -2,7 +2,7 @@
 @import 'modules/mobile-nav.scss';
 
 //
-// Styles for mobile version 
+// Styles for mobile version
 //
 .hidden{
     display: none;
@@ -92,7 +92,7 @@ section{
     display: flex;
     justify-content: center;
     align-items:center;
-    padding-top:50px; 
+    padding-top:50px;
     margin-bottom: 25px;
 }
 
@@ -157,9 +157,9 @@ section{
     color: $main-blue;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
     margin-left: 10px;
-    margin-right:10px; 
+    margin-right:10px;
 }
 
 .description-heading{
@@ -169,7 +169,7 @@ section{
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.739;
-    text-align: center;   
+    text-align: center;
 }
 
 .description-highlight{
@@ -182,7 +182,7 @@ section{
     font-family: "Montserrat";
     color: rgb(68, 65, 64);
     line-height: 1.714;
-    text-align: center;  
+    text-align: center;
     margin-top:30px;
 }
 
@@ -247,7 +247,7 @@ section{
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.364;
-    text-align: center; 
+    text-align: center;
     margin-top:48px;
 }
 
@@ -285,7 +285,7 @@ section{
     color: $main-orange;
     line-height: 1.167;
     text-transform: uppercase;
-    text-align: center;    
+    text-align: center;
 }
 
 .dynamic-desc{
@@ -341,7 +341,7 @@ section{
     color: rgb(68, 65, 64);
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: center;    
+    text-align: center;
 }
 
 .member-title{
@@ -349,8 +349,8 @@ section{
     font-family: "Montserrat";
     color: rgb(68, 65, 64);
     line-height: 1.333;
-    text-align: center;   
-    margin-top:35px; 
+    text-align: center;
+    margin-top:35px;
 }
 
 .member-btn{
@@ -369,7 +369,7 @@ section{
     color: rgb(74, 180, 188);
     text-transform: uppercase;
     line-height: 1.669;
-    text-align: center;     
+    text-align: center;
 }
 
 .dog-pick{
@@ -448,7 +448,7 @@ section{
     font-family: "Montserrat";
     color: rgb(97, 96, 98);
     line-height: 1.35;
-    text-align: center;     
+    text-align: center;
 }
 
 .visit-mailing{
@@ -457,7 +457,7 @@ section{
     color: rgb(68, 65, 64);
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: center;   
+    text-align: center;
     margin-top:65px;
     margin-bottom: 30px;
 }
@@ -537,7 +537,7 @@ section{
     font-weight: bold;
     text-transform: uppercase;
     line-height:60px;
-    text-align: center;     
+    text-align: center;
 }
 
 .full-line{
@@ -560,6 +560,7 @@ section{
 .social-icon{
     width:40px;
 }
+
 
 //
 // Styles for tablet version
@@ -904,3 +905,4 @@ section{
     }
 
 }
+
