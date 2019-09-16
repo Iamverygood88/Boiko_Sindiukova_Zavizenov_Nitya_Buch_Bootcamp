@@ -477,6 +477,10 @@ section{
 
 .ribbon-connect{
     margin-top:60px;
+
+    .ribbon-text{
+        width:100px;
+    }
 }
 
 .connect-form{
@@ -961,12 +965,12 @@ video {
 
     .full-line{
         background-color:#c7c3b7;
-        margin-top:10px;
+        margin-top:50px;
         margin-bottom: 0px;
     }
 
     .social-icons{
-        margin-top:10px;
+        margin-top:20px;
         margin-bottom: 5px;
     }
 
@@ -1172,7 +1176,7 @@ video {
     }
 
     .portfolio-top{
-        width:1200px;
+        width:1000px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1221,11 +1225,86 @@ video {
     }
 
     //Styles for CONTACTS section
-    
+    .visit-section{
+        width:30%;
+    }
 
+    .connect-section{
+        width:70%;
+    }
 
+    .visit-address{
+        margin-top:60px;
+    }
 
+    .visit-mailing{
+        margin-top:30px;
+    }
 
+    .visit-address:last-child{
+        margin-top:0;
+    }
 
+    .visit-address-bottom{
+        margin-top:0px;
+    }
+
+    .description-btn{
+        margin-top:40px;
+        cursor: pointer;
+    }
+
+    .connect-section{
+        justify-content: center;
+    }
+
+    .ribbon-connect{
+        margin-top:20px;
+        width:666px;
+    }
+
+    .connect-form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:650px;
+        margin-bottom: 30px;
+        margin-top:10px;
+    }
+
+    .connect-form-input{
+        width:650px;
+    }
+
+    .connect-form-input-five{
+        width:276px;
+        margin-right:25px;
+    }
+
+    .connect-form-input-five-two{
+        width:276px;
+        margin-right: 0px;
+        margin-left:25px;
+    }
+
+    .connect-form-area{
+        width:100%;
+        margin-bottom: 40px;
+    }
+
+    .connect-form-btn{
+        margin-bottom: 0px;
+    }
+
+    .social-icons{
+        margin-top:10px;
+    }
+
+    .thankyou-text{
+        display: none;
+        margin-bottom: 0px;
+        font-size:40px;
+        line-height:38px;
+    }
 
 }
