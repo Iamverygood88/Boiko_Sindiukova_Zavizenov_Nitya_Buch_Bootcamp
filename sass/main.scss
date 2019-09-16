@@ -377,7 +377,8 @@ section{
 }
 
 .contact-text{
-    margin-bottom: 68px;
+    margin-top:20px;
+    margin-bottom: 40px;
 }
 
 //Styles for PORTFOLIO section
@@ -676,6 +677,7 @@ video {
         text-transform: uppercase;
         line-height: 2;
         text-align: center;
+        text-decoration: none;
     }
 
     .nav-link:last-child{
@@ -1087,4 +1089,66 @@ video {
         display: block;
         width:180px;
     }
+
+    //Styles for TEAM section
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .team-content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width:100%;
+        margin-bottom: 150px;
+    }
+
+    .left-team{
+        justify-content: flex-start;
+        height:450px;
+        width:30%;
+    }
+
+    .dynamic-desc{
+        margin-top:80px;
+        width:200px;
+    }
+
+    .left-team-text{
+        display: none;
+    }
+
+    .team-members{
+        flex-wrap: nowrap;
+        justify-content: center;
+        width:70%;
+    }
+
+    .team-member{
+        width:25%;
+        margin-bottom: 0px;
+    }
+
+    .member-btn{
+        cursor: pointer;
+    }
+
+    .contact-text{
+        display: flex;
+        margin: 0;
+
+        .hi-text{
+            margin-left:25px;
+            margin-right:25px;
+        }
+
+        .hi-line{
+            width:260px;
+        }
+    }
+
 }
