@@ -393,6 +393,10 @@ section{
     }
 }
 
+.additional-heading{
+    display: none;
+}
+
 .column-heading-middle{
     display: flex;
     flex-direction: column;
@@ -792,6 +796,14 @@ video {
         align-items: center;
     }
 
+    .team-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        height:100%;
+    }
+
     .left-team{
         height:92%;
         width:30%;
@@ -1104,6 +1116,7 @@ video {
         flex-direction: row;
         align-items: flex-start;
         width:100%;
+        height: 450px;
         margin-bottom: 150px;
     }
 
@@ -1150,5 +1163,69 @@ video {
             width:260px;
         }
     }
+
+    //Styles for PORTFOLIO section
+    .portfolio-section{
+        .column-heading{
+            margin-bottom: 80px;
+        }
+    }
+
+    .portfolio-top{
+        width:1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .additional-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height:160px;
+    }
+
+    .additional-heading-lines{
+        width:230px;
+        height:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .additional-heading-line{
+        width:100%;
+        height: 2px;
+        background-color: #c7c3b7;
+    }
+
+    .additional-heading-text{
+        width:200px;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(68, 65, 64);
+        line-height: 1.333;
+        text-align: center;         
+    }
+
+    .projects-list{
+        flex-wrap:nowrap;
+        width:100%;
+    }
+
+    .projects-item{
+        width:25%;
+        margin-bottom: 0px;
+    }
+
+    //Styles for CONTACTS section
+    
+
+
+
+
+
 
 }
