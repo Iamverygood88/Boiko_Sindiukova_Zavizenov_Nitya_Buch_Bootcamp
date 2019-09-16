@@ -957,3 +957,105 @@ video {
     }
 
 }
+
+//
+// Styles for desktop version
+//
+@media screen and (min-width:1200px){
+    //Styles for HERO section
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:25%;
+    }
+
+    .left-logo{
+        width:240px;
+        margin-top:0px;
+    }
+
+    .first-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top:60px;
+        margin-bottom: 25px;
+    }
+
+    .second-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 25px;
+    }
+
+    .nav-link{
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+
+    .left-btn{
+        margin-top:60px;
+        margin-bottom: 0px;
+        width:150px;
+        height:51px;
+        background: url(../images/button_short.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hero-right{
+        width:75%;
+        height:100%;
+    }
+
+    .since-date{
+        margin-bottom: 20px;
+    }
+
+    .right-ribbon{
+        margin-bottom: 40px;
+        background:url(../images/ribbon_desktop_big.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hi-block{
+        margin-top:0;
+        margin-bottom:20px;
+    }
+
+    .hi-text{
+        font-size:40px;
+    }
+
+    .hi-line{
+        width:230px;
+    }
+
+    .description-heading{
+        margin-top:0;
+        margin-bottom: 20px;
+        font-size:30px;
+        line-height: 38px;
+    }
+
+    .description-text{
+        width:630px;
+        margin-top:0;
+        margin-bottom: 20px;
+        font-size:16px;
+    }
+
+    .description-btn{
+        margin-bottom:0;
+        margin-top:10px;
+    }
+}
