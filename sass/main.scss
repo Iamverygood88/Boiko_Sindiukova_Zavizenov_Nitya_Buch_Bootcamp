@@ -1029,7 +1029,7 @@ video {
 
     .hi-block{
         margin-top:0;
-        margin-bottom:20px;
+        margin-bottom:25px;
     }
 
     .hi-text{
@@ -1056,6 +1056,35 @@ video {
 
     .description-btn{
         margin-bottom:0;
-        margin-top:10px;
+        margin-top:15px;
+    }
+
+    //Styles for FEATURES section
+    .ribbon-features{
+        background:url(../images/ribbon_desktop_big.png);
+        background-position: center center;
+        height:135px;
+        margin-top:40px;
+        margin-bottom: 70px;
+    }
+
+    .features-list{
+        margin-top:0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .features-item{
+        width:20%;
+    }
+
+    .features-img{
+        width:137px;
+    }
+
+    .features-desc{
+        display: block;
+        width:180px;
     }
 }
