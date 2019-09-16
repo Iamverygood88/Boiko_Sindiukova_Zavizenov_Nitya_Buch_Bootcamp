@@ -377,7 +377,8 @@ section{
 }
 
 .contact-text{
-    margin-bottom: 68px;
+    margin-top:20px;
+    margin-bottom: 40px;
 }
 
 //Styles for PORTFOLIO section
@@ -390,6 +391,10 @@ section{
     .column-heading-line{
         width:245px;
     }
+}
+
+.additional-heading{
+    display: none;
 }
 
 .column-heading-middle{
@@ -472,6 +477,10 @@ section{
 
 .ribbon-connect{
     margin-top:60px;
+
+    .ribbon-text{
+        width:100px;
+    }
 }
 
 .connect-form{
@@ -676,6 +685,7 @@ video {
         text-transform: uppercase;
         line-height: 2;
         text-align: center;
+        text-decoration: none;
     }
 
     .nav-link:last-child{
@@ -788,6 +798,14 @@ video {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .team-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        height:100%;
     }
 
     .left-team{
@@ -947,13 +965,346 @@ video {
 
     .full-line{
         background-color:#c7c3b7;
+        margin-top:50px;
+        margin-bottom: 0px;
+    }
+
+    .social-icons{
+        margin-top:20px;
+        margin-bottom: 5px;
+    }
+
+}
+
+//
+// Styles for desktop version
+//
+@media screen and (min-width:1200px){
+    //Styles for HERO section
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:25%;
+    }
+
+    .left-logo{
+        width:240px;
+        margin-top:0px;
+    }
+
+    .first-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top:60px;
+        margin-bottom: 25px;
+    }
+
+    .second-nav-line{
+        display: block;
+        width:160px;
+        height:2px;
+        background-color: #c2beb1;
+        margin-top: 25px;
+    }
+
+    .nav-link{
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+
+    .left-btn{
+        margin-top:60px;
+        margin-bottom: 0px;
+        width:150px;
+        height:51px;
+        background: url(../images/button_short.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hero-right{
+        width:75%;
+        height:100%;
+    }
+
+    .since-date{
+        margin-bottom: 20px;
+    }
+
+    .right-ribbon{
+        margin-bottom: 40px;
+        background:url(../images/ribbon_desktop_big.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hi-block{
+        margin-top:0;
+        margin-bottom:25px;
+    }
+
+    .hi-text{
+        font-size:40px;
+    }
+
+    .hi-line{
+        width:230px;
+    }
+
+    .description-heading{
+        margin-top:0;
+        margin-bottom: 20px;
+        font-size:30px;
+        line-height: 38px;
+    }
+
+    .description-text{
+        width:630px;
+        margin-top:0;
+        margin-bottom: 20px;
+        font-size:16px;
+    }
+
+    .description-btn{
+        margin-bottom:0;
+        margin-top:15px;
+    }
+
+    //Styles for FEATURES section
+    .ribbon-features{
+        background:url(../images/ribbon_desktop_big.png);
+        background-position: center center;
+        height:135px;
+        margin-top:40px;
+        margin-bottom: 70px;
+    }
+
+    .features-list{
+        margin-top:0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .features-item{
+        width:20%;
+    }
+
+    .features-img{
+        width:137px;
+    }
+
+    .features-desc{
+        display: block;
+        width:180px;
+    }
+
+    //Styles for TEAM section
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .team-content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width:100%;
+        height: 450px;
+        margin-bottom: 150px;
+    }
+
+    .left-team{
+        justify-content: flex-start;
+        height:450px;
+        width:30%;
+    }
+
+    .dynamic-desc{
+        margin-top:80px;
+        width:200px;
+    }
+
+    .left-team-text{
+        display: none;
+    }
+
+    .team-members{
+        flex-wrap: nowrap;
+        justify-content: center;
+        width:70%;
+    }
+
+    .team-member{
+        width:25%;
+        margin-bottom: 0px;
+    }
+
+    .member-btn{
+        cursor: pointer;
+    }
+
+    .contact-text{
+        display: flex;
+        margin: 0;
+
+        .hi-text{
+            margin-left:25px;
+            margin-right:25px;
+        }
+
+        .hi-line{
+            width:260px;
+        }
+    }
+
+    //Styles for PORTFOLIO section
+    .portfolio-section{
+        .column-heading{
+            margin-bottom: 80px;
+        }
+    }
+
+    .portfolio-top{
+        width:1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .additional-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height:160px;
+    }
+
+    .additional-heading-lines{
+        width:230px;
+        height:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .additional-heading-line{
+        width:100%;
+        height: 2px;
+        background-color: #c7c3b7;
+    }
+
+    .additional-heading-text{
+        width:200px;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(68, 65, 64);
+        line-height: 1.333;
+        text-align: center;         
+    }
+
+    .projects-list{
+        flex-wrap:nowrap;
+        width:100%;
+    }
+
+    .projects-item{
+        width:25%;
+        margin-bottom: 0px;
+    }
+
+    //Styles for CONTACTS section
+    .visit-section{
+        width:30%;
+    }
+
+    .connect-section{
+        width:70%;
+    }
+
+    .visit-address{
+        margin-top:60px;
+    }
+
+    .visit-mailing{
+        margin-top:30px;
+    }
+
+    .visit-address:last-child{
+        margin-top:0;
+    }
+
+    .visit-address-bottom{
+        margin-top:0px;
+    }
+
+    .description-btn{
+        margin-top:40px;
+        cursor: pointer;
+    }
+
+    .connect-section{
+        justify-content: center;
+    }
+
+    .ribbon-connect{
+        margin-top:20px;
+        width:666px;
+    }
+
+    .connect-form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:650px;
+        margin-bottom: 30px;
         margin-top:10px;
+    }
+
+    .connect-form-input{
+        width:650px;
+    }
+
+    .connect-form-input-five{
+        width:276px;
+        margin-right:25px;
+    }
+
+    .connect-form-input-five-two{
+        width:276px;
+        margin-right: 0px;
+        margin-left:25px;
+    }
+
+    .connect-form-area{
+        width:100%;
+        margin-bottom: 40px;
+    }
+
+    .connect-form-btn{
         margin-bottom: 0px;
     }
 
     .social-icons{
         margin-top:10px;
-        margin-bottom: 5px;
+    }
+
+    .thankyou-text{
+        display: none;
+        margin-bottom: 0px;
+        font-size:40px;
+        line-height:38px;
     }
 
 }

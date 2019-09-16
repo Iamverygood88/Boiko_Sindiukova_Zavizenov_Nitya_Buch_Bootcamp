@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
     <title>Golden Tooth</title>
 </head>
 <body>
@@ -42,23 +43,23 @@
                 </div>
                 <div class="first-nav-line"></div>
                 <div class="nav-links">
-                    <a class="nav-link">HOME</a>
-                    <a class="nav-link">OUR TEAM</a>
-                    <a class="nav-link">ABOUT US</a>
-                    <a class="nav-link">OUR PORTFOLIO</a>
-                    <a class="nav-link">CONTATCS</a>
+                    <a href="#" class="nav-link">HOME</a>
+                    <a href="#" class="nav-link">OUR TEAM</a>
+                    <a href="#" class="nav-link">ABOUT US</a>
+                    <a href="#" class="nav-link">OUR PORTFOLIO</a>
+                    <a href="#" class="nav-link">CONTATCS</a>
                 </div>
                 <div class="second-nav-line"></div>
                 <div class="left-btn">
                     <div class="left-btn-text">VIDEO</div>
                 </div>
                 <div class="pop-up">
-                  <div class="close-btn"><img src="images/close.svg"></div>
+                  <div class="close-btn"><img src="images/close.svg" alt="close-btn"></div>
                   <video src="includes/video.mp4"></video>
                   <div class="controls">
                     <button class="pause-btn">Pause</button>
-                    <input class="bar" type="range" min="0" max="100"></input>
-                    <input class="volume" type="range" min="0" max="100"></input>
+                    <input class="bar" type="range" min="0" max="100">
+                    <input class="volume" type="range" min="0" max="100">
                      <div class='time-style'>
                      <span class="time"></span>
                      <p> / </p>
@@ -183,82 +184,130 @@
         </section>
         <h1 class="hidden">Team Section</h1>
         <section class="team-section">
-            <div class="left-team">
-                <div class="column-heading">
-                    <div class="column-heading-line"></div>
-                    <div class="column-heading-text">our<br>team</div>
-                    <div class="column-heading-line"></div>
+            <div class="team-content">
+                <div class="left-team">
+                    <div class="column-heading">
+                        <div class="column-heading-line"></div>
+                        <div class="column-heading-text">our<br>team</div>
+                        <div class="column-heading-line"></div>
+                    </div>
+                    <div class="dynamic-desc">
+                        My name is Pupa and I have issues with accountants.                        
+                    </div>
+                    <div class="hi-text left-team-text">contact us!</div>
                 </div>
-                <div class="dynamic-desc">
-                    My name is Pupa and I have issues with accountants.                        
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-circle">
+                            <div class="member-subcircle">
+                                <img src="images/man.jpg" alt="team-member">
+                            </div>
+                        </div>
+                        <div class="member-name">Nitya<br>Buch</div>
+                        <div class="member-title">Motion<br>Designer</div>
+                        <div class="member-btn">
+                            <div class="member-btn-text">more</div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-circle">
+                            <div class="member-subcircle">
+                                <img src="images/woman.jpg" alt="team-member">
+                            </div>
+                        </div>
+                        <div class="member-name">Evgeniia<br>Sindiukova</div>
+                        <div class="member-title">Backend<br>Developer</div>
+                        <div class="member-btn">
+                            <div class="member-btn-text">more</div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-circle">
+                            <div class="member-subcircle">
+                                <img src="images/dog.jpg" alt="team-member" class="dog-pick">
+                            </div>
+                        </div>
+                        <div class="member-name">Gleb<br>Zavizenov</div>
+                        <div class="member-title">Frontend<br>Developer</div>
+                        <div class="member-btn">
+                            <div class="member-btn-text">more</div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-circle">
+                            <div class="member-subcircle">
+                                <img src="images/woman.jpg" alt="team-member">
+                            </div>
+                        </div>
+                        <div class="member-name">Olha<br>Boiko</div>
+                        <div class="member-title">Graphic<br>Designer</div>
+                        <div class="member-btn">
+                            <div class="member-btn-text">more</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hi-text left-team-text">contact us!</div>
             </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-circle">
-                        <div class="member-subcircle">
-                            <img src="images/man.jpg" alt="team-member">
-                        </div>
-                    </div>
-                    <div class="member-name">Nitya<br>Buch</div>
-                    <div class="member-title">Motion<br>Designer</div>
-                    <div class="member-btn">
-                        <div class="member-btn-text">more</div>
-                    </div>
+            <div class="hi-block contact-text">
+                <div class="hi-lines">
+                    <div class="hi-line"></div>
+                    <div class="hi-line"></div>
                 </div>
-                <div class="team-member">
-                    <div class="member-circle">
-                        <div class="member-subcircle">
-                            <img src="images/woman.jpg" alt="team-member">
-                        </div>
-                    </div>
-                    <div class="member-name">Evgeniia<br>Sindiukova</div>
-                    <div class="member-title">Backend<br>Developer</div>
-                    <div class="member-btn">
-                        <div class="member-btn-text">more</div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-circle">
-                        <div class="member-subcircle">
-                            <img src="images/dog.jpg" alt="team-member" class="dog-pick">
-                        </div>
-                    </div>
-                    <div class="member-name">Gleb<br>Zavizenov</div>
-                    <div class="member-title">Frontend<br>Developer</div>
-                    <div class="member-btn">
-                        <div class="member-btn-text">more</div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-circle">
-                        <div class="member-subcircle">
-                            <img src="images/woman.jpg" alt="team-member">
-                        </div>
-                    </div>
-                    <div class="member-name">Olha<br>Boiko</div>
-                    <div class="member-title">Graphic<br>Designer</div>
-                    <div class="member-btn">
-                        <div class="member-btn-text">more</div>
-                    </div>
+                <div class="hi-text">contact us!</div>
+                <div class="hi-lines">
+                    <div class="hi-line"></div>
+                    <div class="hi-line"></div>
                 </div>
             </div>
-            <div class="hi-text contact-text">contact us!</div>
         </section>
         <h1 class="hidden">Portfolio Section</h1>
         <section class="portfolio-section">
-            <div class="column-heading">
-                <div class="column-heading-line"></div>
-                <div class="column-heading-middle">
-                    <div class="column-heading-middle-first">
-                        <div class="column-heading-middle-round"></div>
-                        <div class="column-heading-text">our</div>
-                        <div class="column-heading-middle-round"></div>
+            <div class="portfolio-top">
+                <div class="additional-heading">
+                    <div class="additional-heading-lines">
+                        <div class="additional-heading-line"></div>
+                        <div class="additional-heading-line"></div>
                     </div>
-                    <div class="column-heading-text">portfolio</div>
+                    <div class="additional-heading-text">
+                        The TRAA is a 
+                        volunteer organizati
+                        on, governed by a for
+                        mal constitution
+                        blablaand by-laws.
+                    </div>
+                    <div class="additional-heading-lines">
+                        <div class="additional-heading-line"></div>
+                        <div class="additional-heading-line"></div>
+                    </div>
                 </div>
-                <div class="column-heading-line"></div>
+                <div class="column-heading">
+                    <div class="column-heading-line"></div>
+                    <div class="column-heading-middle">
+                        <div class="column-heading-middle-first">
+                            <div class="column-heading-middle-round"></div>
+                            <div class="column-heading-text">our</div>
+                            <div class="column-heading-middle-round"></div>
+                        </div>
+                        <div class="column-heading-text">portfolio</div>
+                    </div>
+                    <div class="column-heading-line"></div>
+                </div>
+                <div class="additional-heading">
+                    <div class="additional-heading-lines">
+                        <div class="additional-heading-line"></div>
+                        <div class="additional-heading-line"></div>
+                    </div>
+                    <div class="additional-heading-text">
+                        The TRAA is a 
+                        volunteer organizati
+                        on, governed by a for
+                        mal constitution
+                        blablaand by-laws.
+                    </div>
+                    <div class="additional-heading-lines">
+                        <div class="additional-heading-line"></div>
+                        <div class="additional-heading-line"></div>
+                    </div>
+                </div>
             </div>
             <div class="projects-list">
                 <div class="projects-item">
@@ -318,7 +367,7 @@
                 </div>
                 <div class="visit-address">530 South Road East,<br>London, Ontario,<br>Canada</div>
                 <div class="visit-mailing">mailing address</div>
-                <div class="visit-address visit-address-bottom">Golgen Tooth<br>Advertising Agency<br>2202 Coronation Drive
+                <div class="visit-address visit-address-bottom">Golgen Tooth<br>Advertising Agency,<br>2202 Coronation Drive
                     <br>London, Ontario<br>N6G 0B9
                 </div>
                 <div class="visit-btn description-btn">
@@ -331,13 +380,13 @@
                     <div class="ribbon-text">connect with us</div>
                 </div>
                 <form action="#" class="connect-form">
-                    <input type="text" class="connect-form-input" placeholder="Name">
-                    <input type="text" class="connect-form-input" placeholder="Email">
+                    <input type="text" class="connect-form-input connect-form-input-five" placeholder="Name">
+                    <input type="text" class="connect-form-input connect-form-input-five-two" placeholder="Email">
                     <input type="text" class="connect-form-input" placeholder="Subject">
                     <textarea name="message" id="connect-textarea" cols="30" rows="10" placeholder="Your message" class="connect-form-area"></textarea>
                     <button type="submit" class="connect-form-btn">SEND</button>
                 </form>
-                <div class="thankyou-text">Thank you<br>for visiting<br>us!</div>
+                <div class="thankyou-text">Thank you<br>for visiting us!</div>
                 <div class="full-line"></div>
                 <div class="social-icons">
                     <a href="#" class="social-link">
