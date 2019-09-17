@@ -53,21 +53,31 @@
                 <div class="left-btn">
                     <div class="left-btn-text">VIDEO</div>
                 </div>
-                <div class="pop-up">
-                  <div class="close-btn"><img src="images/close.svg" alt="close-btn"></div>
-                  <video src="includes/video.mp4"></video>
-                  <div class="controls">
-                    <button class="pause-btn">Pause</button>
-                    <input class="bar" type="range" min="0" max="100">
-                    <input class="volume" type="range" min="0" max="100">
-                     <div class='time-style'>
-                     <span class="time"></span>
-                     <p> / </p>
-                     <span class="time-all"></span>
-                     </div>
-                  </div>
                 </div>
-            </div>
+                <div class="pop-up">
+                    <div class="close-btn"><img src="images/x1.svg"></div>
+                    <video src="includes/video.mp4"></video>
+                      <div class="controls-flex">
+                      <div class="controls">
+                      <img src="images/play.svg" class="pause-btn">
+                      <input class="bar" type="range" min="0" max="100"></input>
+                      <div class='time-style'>
+                      <span class="time"></span>
+                      <p> / </p>
+                      <span class="time-all"></span>
+                      </div>
+                      <img src='images/left.svg'  class="slow-button">
+                      <img src='images/right.svg' class="faster-button">
+                      </div>
+                      <div class="contrlos-sound">
+                      <img src='images/sound.svg' class="sound-button">
+                      <input class="volume" type="range" min="0" max="100"></input>
+                      </div> 
+                    </div>
+                      
+                
+                  </div>
+            
             <div class="hero-right">
                 <div class="since-date">
                     <div class="since-date-line"></div>
@@ -75,7 +85,7 @@
                     <div class="since-date-line"></div>
                 </div>
                 <div class="right-ribbon">
-                    <div class="ribbon-text">dedication today<br>today<br>for tomorrow</div>
+                    <div class="ribbon-text">We find<br>gold<br>in your business</div>
                 </div>
                 <div class="hi-block">
                     <div class="hi-lines">
@@ -93,31 +103,23 @@
                     <br>advertising company
                 </div>
                 <div class="description-text">
-                    The TRAA is a volunteer organization,
-                    governed by a formal constitution and
-                    by-laws. An elected Executive,with the
-                    guidence the TRAAhe TRAA Works at a
-                    Grassroots Level Within the Thames a
-                    volunteer organization, governedRiver
-                    Watershed to:of the General Members
-                    hip,sets the policies and direction for
+                    Web and digital marketing companies are the “gold-rush” of the current generation. Our team members are successful miners who can find gold in every sphere of business. 
                 </div>
                 <div class="description-text">
-                    The TRAA is a volunteer organization,
-                    governedby a formal constitution and
-                    by-laws. An elected Executive, with the
-                    guidence of the General Membership,
-                    sets the policies and direction for
+                    Contact us today and you will be the company with the gold mine.
                 </div>
+                <a href='#portfolio1'>
                 <div class="description-btn">
-                    <div class="description-btn-text">view portfolio</div>
+                     <div class="description-btn-text">view portfolio </div>
                 </div>
+            </a>
+                
             </div>
         </section>
         <h1 class="hidden">Features Section</h1>
         <section class="features-section">
             <div class="right-ribbon ribbon-features">
-                <div class="ribbon-text">our Advetising company<br>realy stands out</div>
+                <div class="ribbon-text">our Advertising company<br> stands out</div>
             </div>
             <div class="features-list">
                 <div class="features-item">
@@ -216,7 +218,7 @@
                             </div>
                         </div>
                         <div class="member-name">Evgeniia<br>Sindiukova</div>
-                        <div class="member-title">Backend<br>Developer</div>
+                        <div class="member-title">Front-end <br>Developer</div>
                         <div class="member-btn">
                             <div class="member-btn-text">more</div>
                         </div>
@@ -228,7 +230,7 @@
                             </div>
                         </div>
                         <div class="member-name">Gleb<br>Zavizenov</div>
-                        <div class="member-title">Frontend<br>Developer</div>
+                        <div class="member-title">Front-end <br>Developer</div>
                         <div class="member-btn">
                             <div class="member-btn-text">more</div>
                         </div>
@@ -247,20 +249,13 @@
                     </div>
                 </div>
             </div>
-            <div class="hi-block contact-text">
-                <div class="hi-lines">
-                    <div class="hi-line"></div>
-                    <div class="hi-line"></div>
-                </div>
+            <a href='#contactLink'><div class="hi-block contact-text">
                 <div class="hi-text">contact us!</div>
-                <div class="hi-lines">
-                    <div class="hi-line"></div>
-                    <div class="hi-line"></div>
-                </div>
             </div>
+            </a>
         </section>
         <h1 class="hidden">Portfolio Section</h1>
-        <section class="portfolio-section">
+        <section class="portfolio-section" id='portfolio1'>
             <div class="portfolio-top">
                 <div class="additional-heading">
                     <div class="additional-heading-lines">
@@ -370,12 +365,13 @@
                 <div class="visit-address visit-address-bottom">Golgen Tooth<br>Advertising Agency,<br>2202 Coronation Drive
                     <br>London, Ontario<br>N6G 0B9
                 </div>
-                <div class="visit-btn description-btn">
+                <a href="#"><div class="visit-btn description-btn" >
                     <div class="description-btn-text">back to top</div>
                 </div>
+                </a>
             </section>
-            <h2 class="hidden">Connect Section</h2>
-            <section class="connect-section">
+            <h2 class="hidden" >Connect Section</h2>
+            <section class="connect-section" id='contactLink'>
                 <div class="right-ribbon ribbon-connect">
                     <div class="ribbon-text">connect with us</div>
                 </div>
@@ -386,7 +382,7 @@
                     <textarea name="message" id="connect-textarea" cols="30" rows="10" placeholder="Your message" class="connect-form-area"></textarea>
                     <button type="submit" class="connect-form-btn">SEND</button>
                 </form>
-                <div class="thankyou-text">Thank you<br>for visiting us!</div>
+                <div class="thankyou-text">Thank you<br>for visiting<br> us!</div>
                 <div class="full-line"></div>
                 <div class="social-icons">
                     <a href="#" class="social-link">
