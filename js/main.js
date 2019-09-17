@@ -13,6 +13,8 @@ var durationVideo = document.querySelector('.duration-video');
 var volumeChange = document.querySelector('.volume');
 var timeVideo = document.querySelector('.time');
 var timeAll = document.querySelector('.time-all');
+var fasterBtn = document.querySelector('.faster-button');
+var slowBtn = document.querySelector('.slow-button');
 // not working
 
 function videoOpen() {
@@ -33,6 +35,7 @@ function closeVideo() {
 function pausePlay() {
   if (video.paused == true) {
     video.play();
+    video.playbackRate = 1;
     pauseBtn.innerHTML = 'Pause';
   } else {
     video.pause();
@@ -55,11 +58,23 @@ function volumeVorking() {
   video.volume = volumeChange.value / volumeChange.max;
 }
 
+function fasterPlay() {
+  video.playbackRate = 3;
+  video.play();
+}
+
+function slowPlay() {
+  video.playbackRate = 0.5;
+  video.play();
+}
+
 videoBtn.addEventListener('click', videoOpen);
 closeBtn.addEventListener('click', closeVideo);
 pauseBtn.addEventListener('click', pausePlay);
 bar.addEventListener('change', barMoving);
 video.addEventListener('timeupdate', videoMoveSlider);
 volumeChange.addEventListener('change', volumeVorking);
+fasterBtn.addEventListener('click', fasterPlay);
+slowBtn.addEventListener('click', slowPlay);
 
 // --------------------------------------------------------------
