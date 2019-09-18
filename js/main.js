@@ -83,16 +83,29 @@ slowBtn.addEventListener('click', slowPlay);
 let mobileNav = document.querySelector('.mobile-nav');
 let mobileBurger = document.querySelector('.mobile-burger');
 let roundBurgerIcon = document.querySelector('#default-burger');
+let mobileLinks = document.querySelectorAll(".mobile-link");
 let menuIsOpen = false;
+
+if (menuIsOpen){
+  roundBurgerIcon.style.visibility="hidden";
+} else {
+  roundBurgerIcon.style.visibility="visible";
+}
 
 function openMenu() {
   mobileNav.classList.toggle('mobile-nav-open');
   if (mobileNav.classList.contains("mobile-nav-open")){
-    roundBurgerIcon.style.visibility="hidden";
+    menuIsOpen = true;
   } else {
-    roundBurgerIcon.style.visibility="visible";
+    menuIsOpen = false;
   }
 }
 
 mobileBurger.addEventListener('click', openMenu);
 roundBurgerIcon.addEventListener('click', openMenu);
+mobileLinks.forEach(moblink => {
+  moblink.addEventListener('click',function(){
+    menuIsOpen = false;
+    mobileNav.classList.remove('mobile-nav-open');
+  })
+});
