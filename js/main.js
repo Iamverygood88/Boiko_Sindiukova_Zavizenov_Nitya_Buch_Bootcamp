@@ -78,3 +78,21 @@ fasterBtn.addEventListener('click', fasterPlay);
 slowBtn.addEventListener('click', slowPlay);
 
 // --------------------------------------------------------------
+
+// mobile nav
+let mobileNav = document.querySelector('.mobile-nav');
+let mobileBurger = document.querySelector('.mobile-burger');
+let roundBurgerIcon = document.querySelector('#default-burger');
+let menuIsOpen = false;
+
+function openMenu() {
+  mobileNav.classList.toggle('mobile-nav-open');
+  if (mobileNav.classList.contains("mobile-nav-open")){
+    roundBurgerIcon.style.visibility="hidden";
+  } else {
+    roundBurgerIcon.style.visibility="visible";
+  }
+}
+
+mobileBurger.addEventListener('click', openMenu);
+roundBurgerIcon.addEventListener('click', openMenu);
