@@ -8,6 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: left 0.7s ease-in-out; 
+}
+
+.mobile-nav-open{
+    position:fixed;
+    left:0vw;
 }
 
 .mobile-nav-content{
