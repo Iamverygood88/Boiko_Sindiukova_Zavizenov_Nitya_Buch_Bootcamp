@@ -580,6 +580,33 @@ a:link {
 // Styles for tablet version
 //
 @media screen and (min-width:768px){
+
+    
+
+    .member-name{
+        margin-top:25px;
+        
+    }
+    
+    .member-title{
+        margin-top:15px;
+    }
+    
+    .member-btn{
+    
+        margin-top:25px;
+       
+    }
+
+    .light {
+        margin-top: -20px;
+    }
+
+    .details {
+        margin-top: 20px;
+    }
+
+
     .mobile-nav{
         display: none;
     }
@@ -729,6 +756,7 @@ a:link {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        // padding-top: 140px;
     }
 
     .features-item{
@@ -768,6 +796,11 @@ a:link {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .team-member{
+        
+        margin-bottom: 30px;
     }
 
     .column-heading{
@@ -819,17 +852,21 @@ a:link {
     //Styles for PORTFOLIO section
     .portfolio-section{
         .column-heading{
-            margin-top:50px;
-            margin-bottom: 50px;
+            margin-top:30px;
+            margin-bottom: 30px;
             height:220px;
         }
 
         .member-name{
-            margin-top:20px;
+            margin-top:10px;
+        }
+
+        .member-title {
+            margin-top: 0px;
         }
 
         .member-btn{
-            margin-top:25px;
+            margin-top:15px;
         }
     }
 
@@ -842,7 +879,7 @@ a:link {
 
     .projects-item{
         width:50%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .projects-item:nth-child(3){
@@ -852,6 +889,8 @@ a:link {
     .projects-item:nth-child(4){
         margin-bottom: 0px;
     }
+
+    
 
     //Styles for the CONTACTS section
     .contacts-section{
