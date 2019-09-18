@@ -1299,4 +1299,125 @@ a:link {
         line-height:38px;
     }
 
+    .one {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+        position: fixed;
+        right: 15px;
+        top:35%;
+
+      }
+      
+      
+      .circle {
+        height: 25px;
+        width: 25px;
+        background-color: #f97f00;
+        border-radius: 50%;
+      
+      }
+      
+      .circle:hover {
+        background-color: #c6c2b5;
+      
+      }
+ 
+      .two {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+        position: fixed;
+        right: 15px;
+        top:37%;
+  
+      }
+      
+      
+      .circle1 {
+        height: 25px;
+        width: 25px;
+        background-color: #f97f00;
+        border-radius: 50%;
+      
+      }
+      
+      .circle1:hover {
+        background-color: #c6c2b5;
+      
+      }
+      
+      .three {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 50px;
+        position: fixed;
+        right: 15px;
+        top:39%;
+      
+      
+      }
+      
+      .circle2 {
+        height: 25px;
+        width: 25px;
+        background-color: #f97f00;
+        border-radius: 50%;
+      
+      }
+      
+      .circle2:hover {
+        background-color: #c6c2b5;
+      
+      }
+      
+
+      .four {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 70px;
+        position: fixed;
+        right: 15px;
+        top:41%;
+      
+      
+      }
+
+      .circle3 {
+        height: 25px;
+        width: 25px;
+        background-color: #f97f00;
+        border-radius: 50%;
+      
+      }
+
+      .circle3:hover {
+        background-color: #c6c2b5;
+      
+      }
+
+      .five {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 90px;
+        position: fixed;
+        right: 15px;
+        top:43%;
+      
+      
+      }
+
+      .circle4 {
+        height: 25px;
+        width: 25px;
+        background-color: #f97f00;
+        border-radius: 50%;
+      
+      }
+
+      .circle4:hover {
+        background-color: #c6c2b5;
+      
+      }
+
 }
