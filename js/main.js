@@ -109,3 +109,62 @@ mobileLinks.forEach(moblink => {
     mobileNav.classList.remove('mobile-nav-open');
   })
 });
+
+// scrolling
+var ButTwo = document.querySelector('.two');
+var But = document.querySelector('.one');
+var ButThree = document.querySelector('.three');
+var ButFour = document.querySelector('.four');
+var ButFive = document.querySelector('.five');
+
+  function animate() {
+  window.scrollTo({
+  top: window.innerHeight / 1,
+  behavior: 'smooth',
+
+});
+
+  };
+
+  function animate1() {
+  window.scrollTo({
+  top: 0,
+  behavior: 'smooth',
+
+});
+
+  };
+
+  function animate2() {
+  window.scrollTo({
+  top: window.innerHeight / 1 + window.innerHeight,
+  behavior: 'smooth',
+
+});
+
+  };
+
+  function animate3() {
+    window.scrollTo({
+    top: (window.innerHeight / 1) + (window.innerHeight * 2)  ,
+    behavior: 'smooth',
+  
+  });
+  
+    };
+
+    function animate4() {
+      window.scrollTo({
+      top: (window.innerHeight / 1) + (window.innerHeight * 3)  ,
+      behavior: 'smooth',
+    
+    });
+    
+      };
+
+ButTwo.addEventListener('click', animate);
+But.addEventListener('click', animate1);
+ButThree.addEventListener('click', animate2);
+ButFour.addEventListener('click', animate3);
+ButFive.addEventListener('click', animate4);
+// --------------------------------------------------
