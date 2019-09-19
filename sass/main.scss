@@ -2,6 +2,7 @@
 @import 'modules/mobile-nav.scss';
 @import 'modules/video_part.scss';
 @import 'modules/portfolio-page.scss';
+@import 'modules/members.scss'; 
 
 //
 // Styles for mobile version
@@ -1003,6 +1004,10 @@ a:link {
         margin-top: 25px;
     }
 
+    .member-btn{
+        margin-top:0px;
+    }
+
     .nav-link{
         text-decoration: none;
         font-size: 24px;
@@ -1113,8 +1118,7 @@ a:link {
         flex-direction: row;
         align-items: flex-start;
         width:100%;
-        height: 450px;
-        margin-bottom: 150px;
+        height: 400px;
     }
 
     .left-team{
@@ -1149,7 +1153,7 @@ a:link {
 
     .contact-text{
         display: flex;
-        margin: 0;
+        margin-top: 250px;
 
         .hi-text{
             margin-left:25px;
@@ -1420,5 +1424,21 @@ a:link {
         background-color: #c6c2b5;
       
       }
+
+      .left-team {
+          width: 23%;
+      }
+
+      .member-name {
+        margin-top: 45px;
+    }
+
+    .member-title {
+        margin-top: 35px;
+    }
+
+    .member-btn {
+        margin-top: 35px;
+    }
 
 }
