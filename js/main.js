@@ -1,4 +1,5 @@
-'use strict';
+
+
 
 // video part
 // ---------------------------------------------------------
@@ -168,3 +169,84 @@ ButThree.addEventListener('click', animate2);
 ButFour.addEventListener('click', animate3);
 ButFive.addEventListener('click', animate4);
 // --------------------------------------------------
+
+
+
+
+// bio information in object
+// -----------------------------------------------------
+
+var Golden_tooth = {
+
+  Nitya: {
+    name: "Nitya Buch",
+    Img: "woman.jpg",
+    role: "Motion Designer",
+    bio: ''
+
+}, 
+
+Evgeniia: {
+  name: "Evgeniia Sindiukova",
+  Img: "woman.jpg",
+  role: "Front-end developer",
+  bio: "My name is Evgeniia Sindiukova and I am from Russia. In nowadays, I am studying ar Fanshawe College on Interactive Media Design Program. Studying in college brings me satisfaction and I hope that after graduation I will find the job in the current field. At the moment I almost don't do design parts because my level in the drawing is zero. Maybe in the summertime, if I will have free time (because I want to find some internship), I will spend it on self-education in drawing. The current program is the third education program in my life. I have a bachelor degree in Journalism from my country and also I have a post-graduation certificate in Marketing Management. "
+},
+
+
+  Gleb: {
+    name: "Gleb Zavizenov",
+    Img: "woman.jpg",
+    role: "Front-end developer",
+    bio: ''
+
+},
+  
+  
+  Olha: {
+      name: "Olha Boiko",
+      Img: "woman.jpg",
+      role: "Grafic Designer",
+      bio: ''
+
+  },
+
+
+
+}
+
+var popUpTeam = document.querySelector('.pop-up-team');
+var MemberBtn = document.querySelectorAll('.member-btn');
+var teamInfo = document.querySelector('.team-object').children;
+var closeBtnTeam = document.querySelector('.close-btn-team');
+
+function membersOpen() {
+
+  popUpTeam.classList.add('pop-up-team-on');
+  let activeMember = Golden_tooth[this.dataset.name];
+  console.log(this.dataset.name); 
+  teamInfo[0].textContent = activeMember.name; 
+};
+
+function membersClose() {
+  popUpTeam.classList.remove('pop-up-team-on');
+
+}
+
+MemberBtn.forEach(member => member.addEventListener('click', membersOpen));
+closeBtnTeam.addEventListener('click', membersClose );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
