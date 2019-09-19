@@ -1,4 +1,5 @@
-'use strict';
+
+
 
 // video part
 // ---------------------------------------------------------
@@ -168,3 +169,10 @@ ButThree.addEventListener('click', animate2);
 ButFour.addEventListener('click', animate3);
 ButFive.addEventListener('click', animate4);
 // --------------------------------------------------
+
+
+
+
+
+
+
