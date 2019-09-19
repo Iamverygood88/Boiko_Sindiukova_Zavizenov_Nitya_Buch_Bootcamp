@@ -1,7 +1,7 @@
 // Styles for the Portfolio page
 
 //
-//Styles for the desktop version
+//Styles for mobile version
 //
 
 //Styles for INTRO section
@@ -26,13 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:280px;
+    height:135px;
     margin-top:140px;
     margin-bottom: 70px;
 }
 
 .intro-top-reflection{
-    width:100%;
+    height:100%;
 }
 
 .intro-content{
@@ -42,7 +42,8 @@
 }
 
 .intro-content-heading{
-    font-size: 44px;
+    font-size: 24px;
+    width:250px;
     font-family: "Oswald";
     color: rgb(198, 194, 181);
     font-weight: bold;
@@ -52,7 +53,7 @@
 
 .intro-content-lines{
     height:7px;
-    width:912px;
+    width:252px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,8 +73,8 @@
 }
 
 .intro-content-text{
-    width:700px;
-    font-size: 18px;
+    width:260px;
+    font-size: 14px;
     font-family: "Montserrat";
     color: rgb(68, 65, 64);
     line-height: 1.333;
@@ -81,31 +82,50 @@
     margin-top:50px;
 }
 
+.intro-back-btn{
+    margin-top:40px;
+    width:120px;
+    height:46px;
+    background: url(../../images/button_more.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.intro-back-btn-text{
+    font-size: 18px;
+    font-family: "Oswald";
+    color: rgb(74, 180, 188);
+    text-transform: uppercase;
+    text-align: center;    
+}
+
 //Styles for DEVELOPMENT section
 .development-section{
     height:100%;
+    width:100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 150px;
 }
 
 .development-left{
-    width:70%;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .development-left-img{
-    width:800px;
+    width:300px;
 }
 
 .development-right{
-    width:30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .portfolio-right-content{
@@ -116,18 +136,18 @@
 
 .portfolio-section-heading{
     width:270px;
-    font-size: 30px;
+    font-size: 24px;
     font-family: "Oswald";
     color: rgb(198, 194, 181);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.391;
     text-align: center;
-    margin-bottom: 40px;     
+    margin-bottom: 30px;     
 }
 
 .portfolio-right-lines{
-    width:346px;
+    width:260px;
     height:6px;
     display: flex;
     flex-direction: column;
@@ -141,8 +161,8 @@
 }
 
 .portfolio-right-text{
-    width:285px;
-    font-size: 18px;
+    width:230px;
+    font-size: 14px;
     font-family: "Montserrat";
     color: rgb(68, 65, 64);
     line-height: 1.333;
@@ -161,41 +181,106 @@
     padding-bottom: 250px;
 }
 
-//
-//Styles for smaller desktops
-//
-@media screen and (max-width:1280px){
-    .development-left-img{
-        width:750px;
-    }
-}
 
-@media screen and (max-width:1170px){
+//
+//Styles for the tablet version
+//
+@media screen and (min-width:760px){
+    //Styles for INTRO section
+    .intro-top{
+        height:280px;
+    }
+
+    .intro-content-heading{
+        font-size:44px;
+        width:460px;
+    }
+
+    .intro-content-lines{
+        width:587px;
+    }
+
+    .intro-content-text{
+        width:690px;
+        font-size: 20px;
+    }
+
+    //Styles for DEVELOPMENT section
     .development-left-img{
-        width:650px;
+        width:700px;
+    }
+
+    .portfolio-section-heading{
+        font-size: 30px;
     }
 
     .portfolio-right-lines{
-        width:300px;
+        width:346px;
     }
 
     .portfolio-right-text{
-        font-size:16px;
+        font-size:18px;
+        width:290px;
     }
 }
 
-@media screen and (max-width:1090px){
+
+//
+//Styles for the desktop version
+//
+@media screen and (min-width:1200px){
+    //Styles for INTRO section
+    .intro-top{
+        height:280px;
+    }
+
+    .intro-content-heading{
+        width:900px;
+    }
+
+    .intro-content-lines{
+        width:912px;
+    }
+
+    .intro-content-text{
+        width:700px;
+        font-size:20px;
+    }
+
+    //Styles for DEVELOPMENT section
+    .development-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+    }
+
+    .development-left{
+        width:65%;
+        margin-bottom: 0px;
+    }
+
     .development-left-img{
         width:600px;
     }
-}
 
-@media screen and (max-width:1030px){
-    .development-left-img{
-        width:550px;
+    .development-right{
+        width:35%;
+        justify-content: flex-start;
     }
 }
 
-//
-//Styles for tablet version
-//
+@media screen and (min-width:1400px){
+    .development-section{
+        margin-bottom: 200px;
+    }
+
+    .mockup-section{
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+    }
+
+    .development-left-img{
+        width:900px;
+    }
+}
