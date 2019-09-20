@@ -144,25 +144,7 @@ var ButFive = document.querySelector('.five');
 // });
 
 
-// document.addEventListener("wheel", function(e){
-//     if(e.deltaY < 0 && index > 0){
-//       //Negative scroll (up)
-//       index--;
-//       allSections.forEach((section,i) => {
-//         if(i === index){
-//           section.scrollIntoView({behavior:'smooth'});
-//         }
-//       })
-//     } else if(e.deltaY > 0 && index < allSections.length){
-//       //Positive scroll (down)
-//       index++;
-//       allSections.forEach((section,i) => {
-//         if(i === index){
-//           section.scrollIntoView({behavior:'smooth'});
-//         }
-//       })
-//     }
-//   });
+
 
   function animate() {
   window.scrollTo({
