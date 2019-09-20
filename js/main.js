@@ -112,11 +112,57 @@ mobileLinks.forEach(moblink => {
 });
 
 // scrolling
+
+// ------------------------------------------------------
+var index = 0;
+var allSections = document.querySelectorAll("section");
 var ButTwo = document.querySelector('.two');
 var But = document.querySelector('.one');
 var ButThree = document.querySelector('.three');
 var ButFour = document.querySelector('.four');
 var ButFive = document.querySelector('.five');
+
+
+// document.addEventListener("wheel", function(e){
+//   if(e.deltaY < 0 && index > 0){
+//     //Negative scroll (up)
+//     index--;
+//     allSections.forEach((section,i) => {
+//       if(i === index){
+//         section.scrollIntoView({behavior:'smooth'});
+//       }
+//     })
+//   } else if(e.deltaY > 0 && index < allSections.length){
+//     //Positive scroll (down)
+//     index++;
+//     allSections.forEach((section,i) => {
+//       if(i === index){
+//         section.scrollIntoView({behavior:'smooth'});
+//       }
+//     })
+//   }
+// });
+
+
+// document.addEventListener("wheel", function(e){
+//     if(e.deltaY < 0 && index > 0){
+//       //Negative scroll (up)
+//       index--;
+//       allSections.forEach((section,i) => {
+//         if(i === index){
+//           section.scrollIntoView({behavior:'smooth'});
+//         }
+//       })
+//     } else if(e.deltaY > 0 && index < allSections.length){
+//       //Positive scroll (down)
+//       index++;
+//       allSections.forEach((section,i) => {
+//         if(i === index){
+//           section.scrollIntoView({behavior:'smooth'});
+//         }
+//       })
+//     }
+//   });
 
   function animate() {
   window.scrollTo({
@@ -125,7 +171,7 @@ var ButFive = document.querySelector('.five');
 
 });
 
-  };
+};
 
   function animate1() {
   window.scrollTo({
@@ -134,7 +180,7 @@ var ButFive = document.querySelector('.five');
 
 });
 
-  };
+};
 
   function animate2() {
   window.scrollTo({
@@ -143,7 +189,7 @@ var ButFive = document.querySelector('.five');
 
 });
 
-  };
+};
 
   function animate3() {
     window.scrollTo({
@@ -152,16 +198,16 @@ var ButFive = document.querySelector('.five');
   
   });
   
-    };
+  };
 
     function animate4() {
       window.scrollTo({
       top: (window.innerHeight / 1) + (window.innerHeight * 3)  ,
       behavior: 'smooth',
     
-    });
+  });
     
-      };
+  };
 
 ButTwo.addEventListener('click', animate);
 But.addEventListener('click', animate1);
