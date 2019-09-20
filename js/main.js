@@ -205,34 +205,34 @@ var Golden_tooth = {
 
   Nitya: {
     name: "Nitya Buch",
-    Img: "woman.jpg",
+    Img: "nitya2.png",
     role: "Motion Designer",
-    bio: ''
+    bio: "I am Nitya Buch and I am the Motion Designer of the team. I take care of every graphic element of the project. I help with marketing your company, product or projects by designing creative video content. From the script of the ad to filming and editing it, I make sure our representation of your company reflects the excellence of your work."
 
 }, 
 
 Evgeniia: {
   name: "Evgeniia Sindiukova",
-  Img: "woman.jpg",
+  Img: "evgeniia1.png",
   role: "Front-end developer",
-  bio: "My name is Evgeniia Sindiukova and I am from Russia. In nowadays, I am studying ar Fanshawe College on Interactive Media Design Program. Studying in college brings me satisfaction and I hope that after graduation I will find the job in the current field. At the moment I almost don't do design parts because my level in the drawing is zero. Maybe in the summertime, if I will have free time (because I want to find some internship), I will spend it on self-education in drawing. The current program is the third education program in my life. I have a bachelor degree in Journalism from my country and also I have a post-graduation certificate in Marketing Management. "
+  bio: "I am Evgeniia and I am front-end developer of the team. I bring to life all the client's wishes and design desires. Besides working in the Golden Tooth, I am studying Interactive Media Design at Fanshawe College, London, ON.  Joe Kormendi and Trevor Van Rys are my favourite teachers. For the second year in a row, they help me improve my skills and work productivity."
 },
 
 
   Gleb: {
     name: "Gleb Zavizenov",
-    Img: "woman.jpg",
+    Img: "gleb2.png",
     role: "Front-end developer",
-    bio: ''
+    bio: 'Hello! I am a junior web-developer based in London, Ontario. I have been learning and practicing web design and development for more than three years now. I am passionate about this area and want to learn about it as much as possible. I am open to all offers, be sure to contact me if you have an idea for a website!'
 
 },
   
   
   Olha: {
       name: "Olha Boiko",
-      Img: "woman.jpg",
+      Img: "olga2.png",
       role: "Grafic Designer",
-      bio: ''
+      bio: "Hello, my name is Olha, and I'm a graphic designer in our amazing Golden Tooth team. My primary goal is to make your product looks awesome in any kind of advertising material and on the Web. I will take care of all the visual parts of the project, and all your requirements will be met with the addition of creativity and individuality. We will work hard to make your product stand out and shine."
 
   },
 
@@ -251,6 +251,9 @@ function membersOpen() {
   let activeMember = Golden_tooth[this.dataset.name];
   console.log(this.dataset.name); 
   teamInfo[0].textContent = activeMember.name; 
+  teamInfo[1].textContent = activeMember.role;
+  teamInfo[2].src = 'images/cropped_pics/' + activeMember.Img;
+  teamInfo[3].textContent = activeMember.bio;
 };
 
 function membersClose() {
