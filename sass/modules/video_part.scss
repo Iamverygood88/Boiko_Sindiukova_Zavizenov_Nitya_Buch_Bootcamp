@@ -1,12 +1,13 @@
 
 .pop-up {
 	display: none;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	width: 100%;
-	top: 0;
+  top: 0;
+  left:0;
   background-color: #f2f0e9;
-	height: 446px;
+	height: 100vh;
 
 }
 
@@ -183,8 +184,8 @@ input.bar {
 @media screen and (min-width:1200px){
 
   video {
-    min-height: 700px;
-    min-width: 1200px;
+    height: 500px;
+    width: 900px;
   }
 
   input[type=range] {

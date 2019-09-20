@@ -114,88 +114,53 @@ mobileLinks.forEach(moblink => {
 // scrolling
 
 // ------------------------------------------------------
-var index = 0;
-var allSections = document.querySelectorAll("section");
-var ButTwo = document.querySelector('.two');
-var But = document.querySelector('.one');
-var ButThree = document.querySelector('.three');
-var ButFour = document.querySelector('.four');
-var ButFive = document.querySelector('.five');
+if (window.matchMedia("(min-width: 1200px)").matches) {
 
+let index = 0;
+let allSections = document.querySelectorAll("section");
+let allRounds = document.querySelectorAll(".nav-circle");
 
-// document.addEventListener("wheel", function(e){
-//   if(e.deltaY < 0 && index > 0){
-//     //Negative scroll (up)
-//     index--;
-//     allSections.forEach((section,i) => {
-//       if(i === index){
-//         section.scrollIntoView({behavior:'smooth'});
-//       }
-//     })
-//   } else if(e.deltaY > 0 && index < allSections.length){
-//     //Positive scroll (down)
-//     index++;
-//     allSections.forEach((section,i) => {
-//       if(i === index){
-//         section.scrollIntoView({behavior:'smooth'});
-//       }
-//     })
-//   }
-// });
-
-
-
-
-  function animate() {
-  window.scrollTo({
-  top: window.innerHeight / 1,
-  behavior: 'smooth',
-
+document.addEventListener("wheel", function(e){
+  if(e.deltaY < 0 && index > 0){
+    //Negative scroll (up)
+    index--;
+    allRounds.forEach((round,i) => {
+      round.firstElementChild.classList.remove("active-circle");
+    });
+    allSections.forEach((section,i) => {
+      if(i === index){
+        section.scrollIntoView({behavior:'smooth'});
+        allRounds[index].firstElementChild.classList.add("active-circle");
+      }
+    })
+  } else if(e.deltaY > 0 && index < 4){
+    //Positive scroll (down)
+    index++;
+    allRounds.forEach((round,i) => {
+      round.firstElementChild.classList.remove("active-circle");
+    });
+    allSections.forEach((section,i) => {
+      if(i === index){
+        section.scrollIntoView({behavior:'smooth'});
+        allRounds[i].firstElementChild.classList.add("active-circle");
+      }
+    })
+  }
 });
 
-};
-
-  function animate1() {
-  window.scrollTo({
-  top: 0,
-  behavior: 'smooth',
-
-});
-
-};
-
-  function animate2() {
-  window.scrollTo({
-  top: window.innerHeight / 1 + window.innerHeight,
-  behavior: 'smooth',
-
-});
-
-};
-
-  function animate3() {
-    window.scrollTo({
-    top: (window.innerHeight / 1) + (window.innerHeight * 2)  ,
-    behavior: 'smooth',
-  
+allRounds.forEach((round,i) => {
+  round.addEventListener("click", function(){
+    allRounds.forEach((round,i) => {
+      round.firstElementChild.classList.remove("active-circle");
+    });
+    index = i;
+    allRounds[index].firstElementChild.classList.add("active-circle");
+    allSections[i].scrollIntoView({behavior:'smooth'});
   });
-  
-  };
+});
 
-    function animate4() {
-      window.scrollTo({
-      top: (window.innerHeight / 1) + (window.innerHeight * 3)  ,
-      behavior: 'smooth',
-    
-  });
-    
-  };
+}
 
-ButTwo.addEventListener('click', animate);
-But.addEventListener('click', animate1);
-ButThree.addEventListener('click', animate2);
-ButFour.addEventListener('click', animate3);
-ButFive.addEventListener('click', animate4);
 // --------------------------------------------------
 
 // bio information in object
