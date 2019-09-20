@@ -824,7 +824,7 @@ a:link {
     }
 
     .left-team{
-        height:92%;
+        height:850px;
         width:30%;
         display: flex;
         flex-direction: column;
@@ -1037,10 +1037,9 @@ a:link {
         height:100vh;
     }
 
-    // body{
-    //     overflow: hidden;
-    // }
-
+    body{
+        overflow: hidden;
+    }
     
     //Styles for HERO section
     .hero-left{
@@ -1221,6 +1220,7 @@ a:link {
     .team-member{
         width:25%;
         margin-bottom: 0px;
+        margin-top:0;
     }
 
     .member-btn{
@@ -1229,7 +1229,7 @@ a:link {
 
     .contact-text{
         display: flex;
-        margin-top: 250px;
+        margin-top: 200px;
 
         .hi-text{
             margin-left:25px;
@@ -1296,13 +1296,13 @@ a:link {
 
     .projects-item{
         width:25%;
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
 
     .portfolio-section .member-name {
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     //Styles for CONTACTS section
@@ -1377,6 +1377,10 @@ a:link {
         margin-bottom: 0px;
     }
 
+    .full-line{
+        margin-top:0px;
+    }
+
     .social-icons{
         margin-top:10px;
     }
@@ -1386,6 +1390,10 @@ a:link {
         margin-bottom: 0px;
         font-size:40px;
         line-height:38px;
+    }
+
+    .nav-circle{
+        cursor:pointer;
     }
 
     .one {
@@ -1410,6 +1418,10 @@ a:link {
       .circle:hover {
         background-color: #4ab4bc;
       
+      }
+
+      .active-circle{
+        background-color: #4ab4bc !important;
       }
  
       .two {
