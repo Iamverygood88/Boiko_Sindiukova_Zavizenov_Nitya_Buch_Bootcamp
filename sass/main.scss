@@ -53,6 +53,7 @@ a:link {
     height:40px;
     margin-left:20px;
     margin-top:20px;
+    cursor: pointer;
 }
 
 .left-logo{
@@ -370,6 +371,7 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .member-btn-text{
@@ -606,7 +608,15 @@ a:link {
     }
 
     .details {
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+
+    .money {
+        margin-top: 10px;
+    }
+
+    .paddingBug {
+        padding-bottom: 30px;
     }
 
 
@@ -616,12 +626,13 @@ a:link {
 
     section{
         width:100%;
-        height:100vh;
+        // height:100vh;
     }
 
     //Styles for HERO section
     .hero-section{
         flex-direction: row;
+        
     }
 
     .hero-left{
@@ -686,8 +697,11 @@ a:link {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top:30px;
+        padding-bottom: 60px;
     }
 
+    
     .since-date{
         padding-top: 0px;
     }
@@ -802,8 +816,13 @@ a:link {
     }
 
     .team-member{
+        margin-top: 30px;
+        margin-bottom: 0px;
         
-        margin-bottom: 30px;
+    }
+
+    .bug {
+        padding-bottom: 30px;
     }
 
     .column-heading{
@@ -975,6 +994,27 @@ a:link {
 // Styles for desktop version
 //
 @media screen and (min-width:1200px){
+
+    .bug {
+        padding-bottom: 0px;
+    }
+
+    .money {
+        margin-top: 40px;
+    }
+
+    .paddingBug {
+        padding-bottom: 0px;
+    }
+
+    .hero-right {
+        padding-bottom: 0px;
+    }
+
+    section{
+        width:100%;
+        height:100vh;
+    }
     //Styles for HERO section
     .hero-left{
         display: flex;
@@ -1007,6 +1047,7 @@ a:link {
 
     .member-btn{
         margin-top:0px;
+        margin-bottom: 0px;
     }
 
     .nav-link{
@@ -1179,6 +1220,7 @@ a:link {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-top: 30px;
     }
 
     .additional-heading{
@@ -1187,6 +1229,7 @@ a:link {
         align-items: center;
         justify-content: space-between;
         height:160px;
+        margin-top: -50px;
     }
 
     .additional-heading-lines{
@@ -1219,7 +1262,13 @@ a:link {
 
     .projects-item{
         width:25%;
+        margin-top: 30px;
         margin-bottom: 0px;
+    }
+
+    .portfolio-section .member-name {
+        margin-top: 45px;
+        margin-bottom: 45px;
     }
 
     //Styles for CONTACTS section
